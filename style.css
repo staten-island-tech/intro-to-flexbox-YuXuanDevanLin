@@ -1,5 +1,26 @@
 body,
 html {
     height: 100%;
-    margin: ;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card { 
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    flex: column;
+    height: 270px;
+    background-color: aquamarine;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.container {
+    width: 1300px;
+    height: auto;
+    margin: 30px;
+    background-color: blue;
 }
