@@ -4,10 +4,11 @@ html {
     width: 100%;
     margin: 0px;
     padding: 10px;
+    align-items: center;
 }
 .card { 
     width: 22%;
-    height: 26%;
+    height: 400px;
     background-color: aquamarine;
     margin-left: auto;
     margin-right: auto;
@@ -15,26 +16,37 @@ html {
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .container {
-    width: 1070px;
-    height: 100%;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 0%;
-    padding-bottom:0;
-    background-color: blue;    
-    flex-wrap: wrap;
-    align-items: flex-end;
-    display: flex;
+   width: 97vw;
+   background-color: blue;
+   display: flex;
+   margin-top: 0;
+   margin-left: 0;
+   margin-right: 0;
+   align-items: flex-end;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+.card-img {
+
 }
 h1{
-   width: 800px;
-   height: 0px;
+   width: 90vw;
+   height: 40px;
    text-align: center;
    margin-left: auto;
    margin-right: auto;
+   margin-top: 10px;
+   margin-bottom: auto;
+}
+@media screen and (max-width: 800px) {
+    .card {
+        width: 100%
+    }
+    .container {
+        flex-direction: column;
+    }
 }
