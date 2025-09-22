@@ -1,15 +1,33 @@
 body,
 html {
+    background-color: #44674f;
     height: 100%;
     width: 100%;
     margin: 0px;
     padding: 10px;
     align-items: center;
+    font-family: edu NSW act cursive, sans-serif;
+}
+.title {
+    text-align: center;
+    font-family: edu NSW act cursive, sans-serif;
+    font-weight: 500;
+    color: rgb(86, 62, 35);
+    font-size: 40px;
+    margin: 20px;
+}
+.subtitle {
+    text-align: center;
+    color: rgb(86, 62, 35);
+    font-family: edu NSW act cursive, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px;
 }
 .card { 
-    width: 22%;
-    height: 400px;
-    background-color: aquamarine;
+    width: 23%;
+    height: 530px;
+    background-color: #839b70;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
@@ -20,10 +38,11 @@ html {
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 .container {
-   width: 97vw;
-   background-color: rgb(255, 72, 0);
+   width: 98vw;
+   background-image: url(backgroundimage.png);
    display: flex;
    margin-top: 0;
    margin-left: 0;
@@ -32,9 +51,14 @@ html {
    justify-content: space-around;
    flex-wrap: wrap;
    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
 }
 .card-img {
-
+    width: 97%;
+    height: 70%;
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: 0px 0px 20px rgba(251, 255, 234, 0.6);
 }
 h1{
    width: 90vw;
@@ -45,6 +69,24 @@ h1{
    margin-top: 10px;
    margin-bottom: 3px;
 }
+h2{
+   font-size: 20px;
+   font-weight: 500;
+   margin-top: 10px;
+   margin-bottom: 0px;
+   color: white;
+   letter-spacing: 1px;
+}
+
+h3{
+   font-size: 18px;
+   font-weight: 400;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   color: white;
+   letter-spacing: 1px;
+}
+
 @media screen and (max-width: 800px) {
     .card {
         width: 100%
@@ -53,3 +95,15 @@ h1{
         flex-direction: column;
     }
 }
+button {
+ transition: all 0.3s;
+ font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+    background-color: #c4d3be;
+    margin-bottom: 15px;
+ } 
+ button:hover {
+ transform: scale(1.1)
+ }
