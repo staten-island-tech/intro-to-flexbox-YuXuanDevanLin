@@ -38,7 +38,7 @@ html {
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 .container {
    width: 98vw;
@@ -54,11 +54,15 @@ html {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
 }
 .card-img {
-    width: 97%;
+    width: 98%;
     height: 70%;
     border-radius: 10px;
     margin: 0;
-    box-shadow: 0px 0px 20px rgba(251, 255, 234, 0.6);
+}
+.card-img:hover {
+    transform: scale(1.02);
+    transition: all 0.2s;
+    box-shadow: 0px 0px 35px rgba(253, 255, 243, 0.9);
 }
 h1{
    width: 90vw;
@@ -105,5 +109,5 @@ button {
     margin-bottom: 15px;
  } 
  button:hover {
- transform: scale(1.1)
+ transform: scale(1.05)
  }
