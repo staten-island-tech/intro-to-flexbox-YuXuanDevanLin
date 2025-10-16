@@ -1,4 +1,4 @@
-const rackets = [
+const products = [
     {
         name: "Milk Foam Peach Tea",
         price: "6.70",
@@ -10,7 +10,7 @@ const rackets = [
 
     {
         name: "Mango Slush Milk",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MangoSlushMilk.jpeg",
@@ -19,7 +19,7 @@ const rackets = [
 
     {
         name: "Mix Jelly Coconut Milk",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MixJellyCoconutMilk.jpeg",
@@ -28,7 +28,7 @@ const rackets = [
 
     {
         name: "Milk Foam Mango Tea",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MilkFoamMangoTea.jpeg",
@@ -37,7 +37,7 @@ const rackets = [
 
     {
         name: "Rose Lychee Fruit Tea",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "RoseLycheeFruitTea.jpeg",
@@ -46,7 +46,7 @@ const rackets = [
 
     {
         name: "Watermelon Coconut Milk",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "WatermelonCoconutMilk.jpeg",
@@ -55,7 +55,7 @@ const rackets = [
 
     {
         name: "Milk Foam Strawberry Tea",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MilkFoamStrawberryTea.jpeg",
@@ -64,7 +64,7 @@ const rackets = [
 
     {
         name: "Milk Foam Grape Tea",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MilkFoamGrapeTea.jpeg",
@@ -73,7 +73,7 @@ const rackets = [
 
     {
         name: "Matcha Green Tea Pocky",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MatchaGreenTeaPocky.jpeg",
@@ -82,7 +82,7 @@ const rackets = [
 
     {
         name: "Leijinji Breadstick Cheese Flavor",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "LeijinjiBreadstickCheeseFlavor.png",
@@ -91,7 +91,7 @@ const rackets = [
 
     {
         name: "Orion Choco Pie",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "OrionChocoPie.png",
@@ -100,7 +100,7 @@ const rackets = [
 
     {
         name: "Want Want Chocolate Wafer Roll",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "WantWantChocolateWaferRoll.jpeg",
@@ -109,7 +109,7 @@ const rackets = [
 
     {
         name: "insert new product name",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -118,7 +118,7 @@ const rackets = [
 
     {
         name: "insert new product name",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -127,7 +127,7 @@ const rackets = [
 
     {
         name: "insert new product name",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -136,7 +136,7 @@ const rackets = [
 
     {
         name: "insert new product name",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -145,7 +145,7 @@ const rackets = [
 
     {
         name: "insert new product name",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -154,7 +154,7 @@ const rackets = [
 
     {
         name: "insert new product name",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -163,7 +163,7 @@ const rackets = [
 
     {
         name: "insert new product name",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -172,7 +172,7 @@ const rackets = [
 
     {
         name: "insert new product name",
-        price: "7",
+        price: "6.70",
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -180,19 +180,34 @@ const rackets = [
     }
 ];
 
+function inject(item) {
+    //do something
+    const container = document.querySelector(".display-container");
+    container.insertAdjacentHTML("afterbegin", `<div class= "card">
+        <img
+        class= "card-img"
+        src= ${item.src}
+        alt= ${item.alt}
+        />
+        <h3 class= "card-title">${item.name}</h3>
+        <h5 class= "price">${item.price}</h5>
+        </div>
+
 function addToCart() {
     const buttons = document.querySelectorAll("button");
     const btnArray = Array.from(buttons);
     btnArray.forEach((btn) => 
-        btn.addEventListener("click", (event) => {
-            console.log(event.target.textContent);
-            console.log(event.target.closest(".display-album").getAttribute("data-title"));
+        btn.addEventListener("click", function (event) {
+            console.log(
+                event.target.closest(".display-card").getAttribute("data-id"));
+                //replace .display-card and data-id with whatever you named it
+                event.target.textContent;
         })
     );
     //find the item in the array
     //take that object and push into cart
 }
-addToCart();
+getCards();
 
 //made an array
 //using forEach to put array of cards on screen
