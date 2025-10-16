@@ -180,33 +180,45 @@ const products = [
     }
 ];
 
-function inject(item) {
-    //do something
-    const container = document.querySelector(".display-container");
-    container.insertAdjacentHTML("afterbegin", `<div class= "card">
+function inject(product) {
+    // insert one product card into the display container with a data-id
+    const container = document.querySelector(".container");
+    container.insertAdjacentHTML("afterbegin", `<div class="card">
         <img
-        class= "card-img"
-        src= ${item.src}
-        alt= ${item.alt}
+            class="card-img"
+            src=${product.src}
+            alt="Product name"
         />
-        <h3 class= "card-title">${item.name}</h3>
-        <h5 class= "price">${item.price}</h5>
-        </div>
+        <h3 class="card-title">${product.name}</h3>
+        <h5 class="price">${product.price}</h5>
+        <button class="buy-btn">Buy Now</button>
+        </a>
+        </div>`)
+        //query the container
+        //using adjacentHTML to insert a card
+}
+
+products.forEach((product) => inject(product));
 
 function addToCart() {
-    const buttons = document.querySelectorAll("button");
+    const buttons = document.querySelectorAll(".buy-btn");
     const btnArray = Array.from(buttons);
-    btnArray.forEach((btn) => 
+    btnArray.forEach((btn) => {
         btn.addEventListener("click", function (event) {
             console.log(
-                event.target.closest(".display-card").getAttribute("data-id"));
-                //replace .display-card and data-id with whatever you named it
-                event.target.textContent;
-        })
-    );
-    //find the item in the array
-    //take that object and push into cart
+                event.currentTarget.closest(".card").getAttribute("data-id"));
+                event.currentTarget.textContent;
+        });
+    });
 }
+
+function addToCart() {
+    const buttons = document.querySelector("add to cart");
+    container.innerHTML = ""; // clear previous cards
+    products.forEach((item, index) => inject(item, index));
+    addToCart();
+}
+
 getCards();
 
 //made an array
