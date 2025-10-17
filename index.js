@@ -1,7 +1,7 @@
 const products = [
     {
         name: "Milk Foam Peach Tea",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MilkFoamPeachTea.jpeg",
@@ -10,7 +10,7 @@ const products = [
 
     {
         name: "Mango Slush Milk",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MangoSlushMilk.jpeg",
@@ -19,7 +19,7 @@ const products = [
 
     {
         name: "Mix Jelly Coconut Milk",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MixJellyCoconutMilk.jpeg",
@@ -28,7 +28,7 @@ const products = [
 
     {
         name: "Milk Foam Mango Tea",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MilkFoamMangoTea.jpeg",
@@ -37,7 +37,7 @@ const products = [
 
     {
         name: "Rose Lychee Fruit Tea",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "RoseLycheeFruitTea.jpeg",
@@ -46,7 +46,7 @@ const products = [
 
     {
         name: "Watermelon Coconut Milk",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "WatermelonCoconutMilk.jpeg",
@@ -55,7 +55,7 @@ const products = [
 
     {
         name: "Milk Foam Strawberry Tea",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MilkFoamStrawberryTea.jpeg",
@@ -64,7 +64,7 @@ const products = [
 
     {
         name: "Milk Foam Grape Tea",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MilkFoamGrapeTea.jpeg",
@@ -73,7 +73,7 @@ const products = [
 
     {
         name: "Matcha Green Tea Pocky",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MatchaGreenTeaPocky.jpeg",
@@ -82,7 +82,7 @@ const products = [
 
     {
         name: "Leijinji Breadstick Cheese Flavor",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "LeijinjiBreadstickCheeseFlavor.png",
@@ -91,7 +91,7 @@ const products = [
 
     {
         name: "Orion Choco Pie",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "OrionChocoPie.png",
@@ -100,7 +100,7 @@ const products = [
 
     {
         name: "Want Want Chocolate Wafer Roll",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "WantWantChocolateWaferRoll.jpeg",
@@ -109,7 +109,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -118,7 +118,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -127,7 +127,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -136,7 +136,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -145,7 +145,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -154,7 +154,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -163,7 +163,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -172,7 +172,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: "6.70",
+        price: 12,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -189,8 +189,8 @@ function inject(product) {
             src=${product.src}
             alt="Product name"
         />
-        <h3 class="card-title">${product.name}</h3>
-        <h5 class="price">${product.price}</h5>
+        <h2 class="card-title">${product.name}</h2>
+        <h3 class="price">$${product.price}</h3>
         <button class="buy-btn">Buy Now</button>
         </a>
         </div>`)
