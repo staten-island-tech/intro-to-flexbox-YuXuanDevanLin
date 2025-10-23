@@ -191,8 +191,14 @@
 
 function filterBooksByGenre(genre) {
     const cards = document.querySelectorAll(".book.card");
-    cards.forEach(card => {
-        const 
+    cards.forEach((card) => {
+        const cardCategory = card.getAttribute("data-genre");
+        if (genre === cardCategory) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+    })
 }
 
     </div>
