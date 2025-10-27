@@ -1,79 +1,9 @@
 const products = [
-    {
-        name: "Milk Foam Peach Tea",
-        price: 12,
-        inStock: true, // or false
-        brand: "Bing Ling Tea",
-        src: "MilkFoamPeachTea.jpeg",
-        alt: "Milk Foam Peach Tea"
-    },
-
-    {
-        name: "Mango Slush Milk",
-        price: 12,
-        inStock: true, // or false
-        brand: "Bing Ling Tea",
-        src: "MangoSlushMilk.jpeg",
-        alt: "Mango Slush Milk"
-    },
-
-    {
-        name: "Mix Jelly Coconut Milk",
-        price: 12,
-        inStock: true, // or false
-        brand: "Bing Ling Tea",
-        src: "MixJellyCoconutMilk.jpeg",
-        alt: "Mix Jelly Coconut Milk"
-    },
-
-    {
-        name: "Milk Foam Mango Tea",
-        price: 12,
-        inStock: true, // or false
-        brand: "Bing Ling Tea",
-        src: "MilkFoamMangoTea.jpeg",
-        alt: "Milk Foam Mango Tea"
-    },
-
-    {
-        name: "Rose Lychee Fruit Tea",
-        price: 12,
-        inStock: true, // or false
-        brand: "Bing Ling Tea",
-        src: "RoseLycheeFruitTea.jpeg",
-        alt: "Rose Lychee Fruit Tea"
-    },
-
-    {
-        name: "Watermelon Coconut Milk",
-        price: 12,
-        inStock: true, // or false
-        brand: "Bing Ling Tea",
-        src: "WatermelonCoconutMilk.jpeg",
-        alt: "Watermelon Coconut Milk"
-    },
-
-    {
-        name: "Milk Foam Strawberry Tea",
-        price: 12,
-        inStock: true, // or false
-        brand: "Bing Ling Tea",
-        src: "MilkFoamStrawberryTea.jpeg",
-        alt: "Milk Foam Strawberry Tea"
-    },
-
-    {
-        name: "Milk Foam Grape Tea",
-        price: 12,
-        inStock: true, // or false
-        brand: "Bing Ling Tea",
-        src: "MilkFoamGrapeTea.jpeg",
-        alt: "Milk Foam Grape Tea"
-    },
+    
 
     {
         name: "Matcha Green Tea Pocky",
-        price: 12,
+        price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "MatchaGreenTeaPocky.jpeg",
@@ -82,7 +12,7 @@ const products = [
 
     {
         name: "Leijinji Breadstick Cheese Flavor",
-        price: 12,
+        price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "LeijinjiBreadstickCheeseFlavor.png",
@@ -91,7 +21,7 @@ const products = [
 
     {
         name: "Orion Choco Pie",
-        price: 12,
+        price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "OrionChocoPie.png",
@@ -100,7 +30,7 @@ const products = [
 
     {
         name: "Want Want Chocolate Wafer Roll",
-        price: 12,
+        price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "WantWantChocolateWaferRoll.jpeg",
@@ -109,7 +39,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: 12,
+        price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -118,7 +48,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: 12,
+        price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -127,7 +57,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: 12,
+        price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -136,7 +66,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: 12,
+        price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -145,7 +75,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: 12,
+        price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -154,7 +84,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: 12,
+        price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -163,7 +93,7 @@ const products = [
 
     {
         name: "insert new product name",
-        price: 12,
+        price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
@@ -172,12 +102,84 @@ const products = [
 
     {
         name: "insert new product name",
-        price: 12,
+        price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
         src: "",
         alt: "image alt text"
-    }
+    },
+
+    {
+        name: "Milk Foam Peach Tea",
+        price: 12.34,
+        inStock: true, // or false
+        brand: "Bing Ling Tea",
+        src: "MilkFoamPeachTea.jpeg",
+        alt: "Milk Foam Peach Tea"
+    },
+
+    {
+        name: "Mango Slush Milk",
+        price: 12.34,
+        inStock: true, // or false
+        brand: "Bing Ling Tea",
+        src: "MangoSlushMilk.jpeg",
+        alt: "Mango Slush Milk"
+    },
+
+    {
+        name: "Mix Jelly Coconut Milk",
+        price: 12.34,
+        inStock: true, // or false
+        brand: "Bing Ling Tea",
+        src: "MixJellyCoconutMilk.jpeg",
+        alt: "Mix Jelly Coconut Milk"
+    },
+
+    {
+        name: "Milk Foam Mango Tea",
+        price: 12.34,
+        inStock: true, // or false
+        brand: "Bing Ling Tea",
+        src: "MilkFoamMangoTea.jpeg",
+        alt: "Milk Foam Mango Tea"
+    },
+
+    {
+        name: "Rose Lychee Fruit Tea",
+        price: 12.34,
+        inStock: true, // or false
+        brand: "Bing Ling Tea",
+        src: "RoseLycheeFruitTea.jpeg",
+        alt: "Rose Lychee Fruit Tea"
+    },
+
+    {
+        name: "Watermelon Coconut Milk",
+        price: 12.34,
+        inStock: true, // or false
+        brand: "Bing Ling Tea",
+        src: "WatermelonCoconutMilk.jpeg",
+        alt: "Watermelon Coconut Milk"
+    },
+
+    {
+        name: "Milk Foam Strawberry Tea",
+        price: 12.34,
+        inStock: true, // or false
+        brand: "Bing Ling Tea",
+        src: "MilkFoamStrawberryTea.jpeg",
+        alt: "Milk Foam Strawberry Tea"
+    },
+
+    {
+        name: "Milk Foam Grape Tea",
+        price: 12.34,
+        inStock: true, // or false
+        brand: "Bing Ling Tea",
+        src: "MilkFoamGrapeTea.jpeg",
+        alt: "Milk Foam Grape Tea"
+    },
 ];
 
 function inject(product) {
