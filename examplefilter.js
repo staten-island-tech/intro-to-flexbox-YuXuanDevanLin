@@ -53,20 +53,5 @@ const books = [
     genre: "Non-Fiction",
     year: 2016,
   },
-  { title: "Into the Stars", 
-    author: "Maya Lin", 
-    genre: "Sci-Fi", 
-    year: 2024 },
+  { title: "Into the Stars", author: "Maya Lin", genre: "Sci-Fi", year: 2024 },
 ];
-
-function filterBooksByGenre(genre) {
-    const cards = document.querySelectorAll(".book.card");
-    cards.forEach((card) => {
-        const cardCategory = card.getAttribute("data-genre");
-        if (genre === cardCategory) {
-            card.style.display = "";
-        } else {
-            card.style.display = "none";
-        }
-    })
-}

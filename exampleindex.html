@@ -48,7 +48,7 @@
         border-radius: 5px;
         cursor: pointer;
         margin-top: 8px;
-        transition: background-color 0.2s;
+        transition: background 0.2s;
       }
 
       .add:hover {
@@ -60,7 +60,7 @@
     <h1>Book Collection</h1>
     <div id="card-display">
       <!-- 2025 Releases -->
-      <!-- <div class="book-card" data-genre="Cyberpunk">
+      <div class="book-card" data-genre="Cyberpunk">
         <h3>Neon Horizon</h3>
         <p><strong>Author:</strong> Kai Rivera</p>
         <p><strong>Genre:</strong> Cyberpunk</p>
@@ -106,10 +106,10 @@
         <p><strong>Genre:</strong> Non-Fiction</p>
         <p><strong>Year:</strong> 2025</p>
         <button class="add">Add to Cart</button>
-      </div> -->
+      </div>
 
       <!-- Previous Books -->
-      <!-- <div class="book-card" data-genre="Fantasy">
+      <div class="book-card" data-genre="Fantasy">
         <h3>The Hidden Forest</h3>
         <p><strong>Author:</strong> Ava Green</p>
         <p><strong>Genre:</strong> Fantasy</p>
@@ -187,20 +187,7 @@
         <p><strong>Genre:</strong> Sci-Fi</p>
         <p><strong>Year:</strong> 2024</p>
         <button class="add">Add to Cart</button>
-      </div> -->
-
-function filterBooksByGenre(genre) {
-    const cards = document.querySelectorAll(".book.card");
-    cards.forEach((card) => {
-        const cardCategory = card.getAttribute("data-genre");
-        if (genre === cardCategory) {
-            card.style.display = "";
-        } else {
-            card.style.display = "none";
-        }
-    })
-}
-
+      </div>
     </div>
   </body>
   <script src="examplefilter.js"></script>
