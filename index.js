@@ -6,6 +6,7 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
+        category: "Snacks",
         src: "MatchaGreenTeaPocky.jpeg",
         alt: "Matcha Green Tea Pocky"
     },
@@ -15,6 +16,7 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
+        category: "Snacks",
         src: "LeijinjiBreadstickCheeseFlavor.png",
         alt: "Leijinji Breadstick Cheese Flavor"
     },
@@ -24,6 +26,7 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
+        category: "Snacks",
         src: "OrionChocoPie.png",
         alt: "Orion Choco Pie"
     },
@@ -33,6 +36,7 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
+        category: "Snacks",
         src: "WantWantChocolateWaferRoll.jpeg",
         alt: "Want Want Chocolate Wafer Roll"
     },
@@ -42,6 +46,7 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
+        category: "Misc",
         src: "",
         alt: "image alt text"
     },
@@ -182,46 +187,41 @@ const products = [
     },
 ];
 
-function inject(product) {
+function inject(product, index) {
     // insert one product card into the display container with a data-id
     const container = document.querySelector(".container");
-    container.insertAdjacentHTML("afterbegin", `<div class="card">
+    container.insertAdjacentHTML(
+        "beforeend",
+        `<div class="card" data-id="${index}" data-category="${product.category || ''}">
         <img
             class="card-img"
-            src=${product.src}
-            alt="Product name"
+            src="${product.src}"
+            alt="${product.alt || ''}"
         />
         <h2 class="card-title">${product.name}</h2>
         <h3 class="price">$${product.price}</h3>
         <button class="buy-btn">Buy Now</button>
-        </a>
-        </div>`)
-        //query the container
-        //using adjacentHTML to insert a card
+        </div>`);
+    //query the container
+    //using insertAdjacentHTML to insert a card
 }
 
 products.forEach((product) => inject(product));
+products.forEach((product, index) => inject(product, index));
 
 function addToCart() {
     const buttons = document.querySelectorAll(".buy-btn");
-    const btnArray = Array.from(buttons);
-    btnArray.forEach((btn) => {
+    buttons.forEach((btn) => {
         btn.addEventListener("click", function (event) {
-            console.log(
-                event.currentTarget.closest(".card").getAttribute("data-id"));
-                event.currentTarget.textContent;
+            const id = event.currentTarget.closest(".card").getAttribute("data-id");
+            console.log(id);
+            event.currentTarget.textContent = "Added";
         });
     });
 }
 
-function addToCart() {
-    const buttons = document.querySelector("add to cart");
-    container.innerHTML = ""; // clear previous cards
-    products.forEach((item, index) => inject(item, index));
-    addToCart();
-}
-
-getCards();
+// attach listeners after injecting
+addToCart();
 
 //made an array
 //using forEach to put array of cards on screen
