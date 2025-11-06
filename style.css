@@ -71,6 +71,8 @@ html {
     border-radius: 10px;
     margin: 0;
 }
+
+
 .card-img:hover {
     transform: scale(1.02);
     transition: all 0.2s;
