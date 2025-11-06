@@ -221,7 +221,6 @@ function inject(product, index) {
     //using insertAdjacentHTML to insert a card
 }
 
-products.forEach((product) => inject(product));
 products.forEach((product, index) => inject(product, index));
 
 function addToCart() {
@@ -241,3 +240,18 @@ addToCart();
 //made an array
 //using forEach to put array of cards on screen
 //work on add to cart
+function filterByCategory(category) {
+    const cards = document.querySelectorAll(".card");}
+ 
+    cards.forEach((card) => {
+        if (category === "All" || card.getAttribute("data-category") === category) {
+            card.style.display = "block";    
+        } else {
+            card.style.display = "none";
+        }
+    });
+
+
+function createFilterButtons() {
+    const categories = ["All", "Milk Tea", "Dairy Free", "Snacks", "Misc"];
+    const filtersDiv = document.querySelector(".filters");}
