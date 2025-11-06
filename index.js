@@ -7,7 +7,7 @@ const products = [
         inStock: true, // or false
         brand: "Bing Ling Tea",
         category: "Snacks",
-        src: "MatchaGreenTeaPocky.jpeg",
+        img: "MatchaGreenTeaPocky.jpeg",
         alt: "Matcha Green Tea Pocky"
     },
 
@@ -17,7 +17,7 @@ const products = [
         inStock: true, // or false
         brand: "Bing Ling Tea",
         category: "Snacks",
-        src: "LeijinjiBreadstickCheeseFlavor.png",
+        img: "LeijinjiBreadstickCheeseFlavor.png",
         alt: "Leijinji Breadstick Cheese Flavor"
     },
 
@@ -27,7 +27,7 @@ const products = [
         inStock: true, // or false
         brand: "Bing Ling Tea",
         category: "Snacks",
-        src: "OrionChocoPie.png",
+        img: "OrionChocoPie.png",
         alt: "Orion Choco Pie"
     },
 
@@ -37,7 +37,7 @@ const products = [
         inStock: true, // or false
         brand: "Bing Ling Tea",
         category: "Snacks",
-        src: "WantWantChocolateWaferRoll.jpeg",
+        img: "WantWantChocolateWaferRoll.jpeg",
         alt: "Want Want Chocolate Wafer Roll"
     },
 
@@ -47,7 +47,7 @@ const products = [
         inStock: true, // or false
         brand: "Bing Ling Tea",
         category: "Misc",
-        src: "",
+        img: "",
         alt: "image alt text"
     },
 
@@ -56,7 +56,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "",
+        category: "Misc",
+        img: "",
         alt: "image alt text"
     },
 
@@ -65,7 +66,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "",
+        catergory: "Misc",
+        img: "",
         alt: "image alt text"
     },
 
@@ -74,7 +76,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "",
+        category: "Misc",
+        img: "",
         alt: "image alt text"
     },
 
@@ -83,7 +86,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "",
+        category: "Misc",
+        img: "",
         alt: "image alt text"
     },
 
@@ -92,7 +96,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "",
+        category: "Misc",
+        img: "",
         alt: "image alt text"
     },
 
@@ -101,7 +106,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "",
+        category: "Misc",
+        img: "",
         alt: "image alt text"
     },
 
@@ -110,7 +116,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "",
+        category: "Misc",
+        img: "",
         alt: "image alt text"
     },
 
@@ -119,7 +126,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "MilkFoamPeachTea.jpeg",
+        category: "Milk Tea",
+        img: "MilkFoamPeachTea.jpeg",
         alt: "Milk Foam Peach Tea"
     },
 
@@ -128,7 +136,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "MangoSlushMilk.jpeg",
+        category: "Milk Tea",
+        img: "MangoSlushMilk.jpeg",
         alt: "Mango Slush Milk"
     },
 
@@ -137,7 +146,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "MixJellyCoconutMilk.jpeg",
+        category: "Dairy free",
+        img: "MixJellyCoconutMilk.jpeg",
         alt: "Mix Jelly Coconut Milk"
     },
 
@@ -146,7 +156,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "MilkFoamMangoTea.jpeg",
+        category: "Milk Tea",
+        img: "MilkFoamMangoTea.jpeg",
         alt: "Milk Foam Mango Tea"
     },
 
@@ -155,7 +166,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "RoseLycheeFruitTea.jpeg",
+        category: "Dairy free",
+        img: "RoseLycheeFruitTea.jpeg",
         alt: "Rose Lychee Fruit Tea"
     },
 
@@ -164,7 +176,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "WatermelonCoconutMilk.jpeg",
+        category: "Dairy free",
+        img: "WatermelonCoconutMilk.jpeg",
         alt: "Watermelon Coconut Milk"
     },
 
@@ -173,7 +186,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "MilkFoamStrawberryTea.jpeg",
+        category: "Milk Tea",
+        img: "MilkFoamStrawberryTea.jpeg",
         alt: "Milk Foam Strawberry Tea"
     },
 
@@ -182,7 +196,8 @@ const products = [
         price: 12.34,
         inStock: true, // or false
         brand: "Bing Ling Tea",
-        src: "MilkFoamGrapeTea.jpeg",
+        category: "Milk Tea",
+        img: "MilkFoamGrapeTea.jpeg",
         alt: "Milk Foam Grape Tea"
     },
 ];
@@ -193,15 +208,15 @@ function inject(product, index) {
     container.insertAdjacentHTML(
         "beforeend",
         `<div class="card" data-id="${index}" data-category="${product.category || ''}">
-        <img
-            class="card-img"
-            src="${product.src}"
-            alt="${product.alt || ''}"
-        />
-        <h2 class="card-title">${product.name}</h2>
-        <h3 class="price">$${product.price}</h3>
-        <button class="buy-btn">Buy Now</button>
-        </div>`);
+        <img src=${product.img} alt = ${product.alt} />
+     <h2>${product.brand}</h2>
+     <h3>${product.name}</h3>
+     <p>$${product.price}</p>
+     <button class="cart_button" ${!product.inStock ? "disabled" : ""}>
+         ${product.inStock ? "Add to Cart" : "Out of Stock"}
+       </button>
+     </div>`
+    );
     //query the container
     //using insertAdjacentHTML to insert a card
 }
