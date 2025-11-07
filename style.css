@@ -35,8 +35,18 @@ html {
     padding-top: 1rem;
     padding-bottom: 0%;
 }
+
+p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+    letter-spacing: 1px;
+}
+
 .card { 
-    width: 23%;
+    width: 20.1%;
     height: 530px;
     background-color: #839b70;
     margin-left: auto;
@@ -66,15 +76,15 @@ html {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
 }
 .card-img {
-    width: 98%;
-    height: 70%;
+    width: 90%;
+    height: 60%;
     border-radius: 10px;
-    margin: 0;
+    margin-top: 1rem;
 }
 
 
 .card-img:hover {
-    transform: scale(1.02);
+    transform: scale(1.1);
     transition: all 0.2s;
     box-shadow: 0px 0px 35px rgba(253, 255, 243, 0.9);
 }
@@ -105,16 +115,16 @@ h1{
 }
 h2{
    font-size: 20px;
-   font-weight: 500;
+   font-weight: 400;
    margin-top: 10px;
    margin-bottom: 0px;
-   color: white;
+   color: #c4d3be;
    letter-spacing: 1px;
 }
 
 h3{
    font-size: 18px;
-   font-weight: 400;
+   font-weight: 500;
    margin-top: 5px;
    margin-bottom: 5px;
    color: white;
@@ -235,10 +245,18 @@ h3{
   margin: 0;
 }
 
-.tax-note {
-  font-size: 1.2rem;
-  color: #777;
-  margin-top: 0.8rem;
+.cart_button {
+  width: 67%;
+  background-color: #c4d3be;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 0px;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 800px) {

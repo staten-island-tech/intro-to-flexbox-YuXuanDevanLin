@@ -208,7 +208,7 @@ function inject(product, index) {
     container.insertAdjacentHTML(
         "beforeend",
         `<div class="card" data-id="${index}" data-category="${product.category || ''}">
-        <img src=${product.img} alt = ${product.alt} />
+        <img class= "card-img" src=${product.img} alt = ${product.alt} />
      <h2>${product.brand}</h2>
      <h3>${product.name}</h3>
      <p>$${product.price}</p>
@@ -252,6 +252,4 @@ function filterByCategory(category) {
     });
 
 
-function createFilterButtons() {
-    const categories = ["All", "Milk Tea", "Dairy Free", "Snacks", "Misc"];
-    const filtersDiv = document.querySelector(".filters");}
+function createFilterButtons() {}
