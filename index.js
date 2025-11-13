@@ -202,6 +202,8 @@ const products = [
     },
 ];
 
+console.log("Milk Tea, Dairy Free, Snacks");
+
 function inject(product, index) {
     // insert one product card into the display container with a data-id
     const container = document.querySelector(".container");
@@ -234,6 +236,7 @@ function addToCart() {
     });
 }
 
+const cart = [];
 // attach listeners after injecting
 addToCart();
 
@@ -252,4 +255,3 @@ function filterByCategory(category) {
     });
 
 
-function createFilterButtons() {}
