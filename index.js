@@ -202,7 +202,10 @@ const products = [
     },
 ];
 
-console.log("Milk Tea, Dairy Free, Snacks");
+
+// fix the filter button code at home vvv
+const filterBy(category) 
+function filtered = products.filter(product => product.category === "Snacks");
 
 function inject(product, index) {
     // insert one product card into the display container with a data-id
